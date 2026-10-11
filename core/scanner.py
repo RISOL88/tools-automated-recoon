@@ -26,6 +26,9 @@ def run_rustscan(target: str) -> str:
     except subprocess.CalledProcessError as e:
         print(f"[!] Error: RustScan gagal berjalan: {e.stderr.strip() or e}", file=sys.stderr)
         sys.exit(1)
+    except KeyboardInterrupt:
+        print("\n[!] Dibatalkan oleh user.", file=sys.stderr)
+        sys.exit(130)
 
 
 def parse_rustscan_output(raw_output: str) -> dict[str, list[int]]:
