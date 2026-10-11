@@ -69,3 +69,9 @@ python recon.py scanme.nmap.org -v
 - `core/scanner.py`: Modul wrapper & parser output RustScan
 - `core/prober.py`: Modul HTTP probing (async)
 - `core/output.py`: Modul pemformat tabel terminal (`rich`) & writer (CSV/JSON)
+
+---
+
+## Disclaimer
+
+Tools ini dibuat untuk tujuan edukasi dan pengujian keamanan yang sah (authorized testing) saja. Gunakan hanya pada target yang sudah mendapat izin eksplisit. Penulis tidak bertanggung jawab atas penyalahgunaan tools ini.
